@@ -31,4 +31,11 @@ app.get('/:shortUrl', async (req, res) => {
   res.redirect(shortUrl.full)
 })
 
+// app.get('/changeShortUrls', async (req, res) => {
+//   const newURL = await ShortUrl.findOne({ short: req.params.shortUrl })
+//   if (newURL == null) return res.sendStatus(404)
+
+
+// })
+
 app.listen(process.env.PORT || 5000);
